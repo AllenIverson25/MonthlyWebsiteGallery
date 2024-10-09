@@ -1,68 +1,99 @@
-.btn{
-    box-shadow: 10px,10px,40px;
+.btn {
+  box-shadow: 10px, 10px, 40px;
 }
-.imgsa{
-    background-image: url(/imgs/image\ copy.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
+
+.imgsa {
+  background-image: url(/imgs/image\ copy.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
 }
-/* From Uiverse.io by adamgiebl */ 
-/* From Uiverse.io by adamgiebl */ 
-button {
-  font-size: 18px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  display: inline-block;
-  text-align: center;
-  font-weight: bold;
-  padding: 0.7em 2em;
-  border: 3px solid #FF0072;
-  border-radius: 2px;
+
+
+
+.button {
+  cursor: pointer;
   position: relative;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-  color: #FF0072;
-  text-decoration: none;
-  transition: 0.3s ease all;
-  z-index: 1;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: black;
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
 }
 
-button:before {
-  transition: 0.5s all ease;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  opacity: 0;
+.button::before {
   content: '';
-  background-color: #FF0072;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
   z-index: -1;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-button:hover, button:focus {
-  color: white;
+.button:hover::before {
+  scale: 3;
 }
 
-button:hover:before, button:focus:before {
-  transition: 0.5s all ease;
-  left: 0;
-  right: 0;
-  opacity: 1;
+.button:hover {
+  color: #050505;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(14, 13, 13, 0.4);
 }
 
-button:active {
-  transform: scale(0.9);
+.button:active {
+  scale: 1;
 }
-  nav{
-    box-shadow: 0px 1px 2px white, 
-    0px 2px 4px white, 
-    0px 4px 8px white, 
+
+
+
+nav {
+  box-shadow: 0px 1px 2px white,
+    0px 2px 4px white,
+    0px 4px 8px white,
     0px 8px 16px white;
-  }
-  .card{
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;  }
-    body{
+}
 
-    }
+.card {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+body {
+  font-family: "picholine-antique-variable", sans-serif;
+  font-variation-settings: "wght" 100;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  clear: both;
+  font-weight: 400;
+  color: var(--bs-dropdown-link-color);
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  border-radius: var(--bs-dropdown-item-border-radius, 0);
+}
+
+.dropdown-item:hover {
+
+  background-color: rgb(107, 106, 106);
+
+}
